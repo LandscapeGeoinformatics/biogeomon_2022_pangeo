@@ -13,8 +13,8 @@ authors:
 - family-names: "Uuemaa"
   given-names: "Evelyn"
   orcid: https://orcid.org/0000-0002-0782-6740
-title: "Landscape Geoinformatics EGU 2021 workshop materials"
+title: "Landscape Geoinformatics BIOGEOMON 2022 workshop materials"
 version: 1.0.0
 doi: 10.5281/zenodo.5876348
-date-released: 2021-12-17
-url: "https://github.com/LandscapeGeoinformatics/EGU_2021_lgeo_workshops"
+date-released: 2022-06-24
+url: "https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo"

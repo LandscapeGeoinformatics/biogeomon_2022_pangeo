@@ -3,9 +3,9 @@ sources:
         description: Monthly precipitation data for the Baltics
         driver: netcdf
         args:
-            urlpath: 'https://owncloud.ut.ee/owncloud/index.php/s/pcNtgXZaY6mxdcg/download'
+            urlpath: 'https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/raw/main/resources/monthly_precip_baltics.nc'
     monthly_temp_baltics:
         description: Monthly temperature data for the Baltics
         driver: netcdf
         args:
-            urlpath: 'https://owncloud.ut.ee/owncloud/index.php/s/EHEWXe5zJSEpaDb/download'
+            urlpath: 'https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/raw/main/resources/monthly_temp_baltics.nc'

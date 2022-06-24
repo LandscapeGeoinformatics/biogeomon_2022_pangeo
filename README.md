@@ -31,4 +31,4 @@ Spatio-temporal trend analysis of spatial climate data (temperature and rainfall
 
 ## Launch MyBinder online notebook demo
 
-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LandscapeGeoinformatics/EGU_2021_lgeo_workshops/HEAD?filepath=SC5.8%2FEGU2021_Workshop_SC58.ipynb)
+- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LandscapeGeoinformatics/biogeomon_2022_pangeo/HEAD?filepath=notebook%2Fworkshop.ipynb)
