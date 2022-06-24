@@ -1,0 +1,47 @@
+name: biogeomon2022
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - cartopy
+  - dask
+  - datashader
+  - descartes
+  - fiona
+  - fsspec
+  - gdal
+  - geographiclib
+  - geojson
+  - geopandas
+  - geopy
+  - geos
+  - hdf4
+  - hdf5
+  - holoviews
+  - hvplot
+  - intake
+  - intake-xarray
+  - ipykernel
+  - ipython
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  - mapclassify
+  - matplotlib
+  - netcdf4
+  - notebook
+  - numpy
+  - pandas
+  - pillow
+  - proj
+  - pyproj
+  - rasterio
+  - requests
+  - scipy
+  - seaborn
+  - shapely
+  - xarray
+  - h5netcdf
+  - rioxarray
+  - pymannkendall
