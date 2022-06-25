@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Installation and setup for Python with Miniconda &#8212; BIOGEOMON 2022 Workshop 1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Alternative installation method for Conda environments" href="alt_install_miniconda.html" />
+    <link rel="prev" title="The Pangeo Python Ecosystem" href="overview.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/logo_ut.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="overview.html">
+  The Pangeo Python Ecosystem
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Installation and setup for Python with Miniconda
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="alt_install_miniconda.html">
+  Alternative installation method for Conda environments
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="test_installation.html">
+  Test that everything works
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L1_data/workshop.html">
+  Spatio-temporal trend analysis of temperature using Python
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L2_fair/overview.html">
+  FAIR and Reproducible Research
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/LGeoinformatics" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Installation and setup for Python with Miniconda
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verifying-the-installation">
+   Verifying the installation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Creating environments and install packages
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="installation-and-setup-for-python-with-miniconda">
+<h1>Installation and setup for Python with Miniconda<a class="headerlink" href="#installation-and-setup-for-python-with-miniconda" title="Permalink to this headline">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the University computer lab you <strong>DO NOT</strong> have to install Anaconda or Miniconda or any other Python distribution.
+If you are attending the course in the University computer lab, please jump to <a class="reference external" href="Installing_Miniconda_GIS.html#id1">Creating environments and install packages</a> to create the working environment.
+This section only for general info if you want to install Python on your own computer, and for remote students.</p>
+</div>
+<p><strong>How to start doing GIS with Python on a computer?</strong></p>
+<p>Well, first you need to install Python and necessary Python modules that are used to perform various GIS-tasks. The purpose of this page is to help you
+out installing Python and all those modules into your own computer. Even though it is possible to install Python from their <a class="reference external" href="https://www.python.org/">homepage</a>,
+<strong>we highly recommend using</strong> <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> or <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a> which is an open source distribution of the Python and R programming
+languages for large-scale data processing, predictive analytics, and scientific computing, that aims to simplify package management and deployment. In short,
+it makes life much easier when installing new tools on your Python to play with.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Miniconda</strong> is an encapsulated versatile virtual python environment installer,
+that works under the hood of the big Anaconda python distribution.
+Miniconda is basically a mini version of Anaconda that includes only the conda package manager and its dependencies!</p>
+</div>
+<p><a class="reference external" href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a></p>
+<p>Following steps have been tested to work on Windows 7 and 10 with Anaconda/Miniconda 64 bit.</p>
+<p><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">Download Miniconda installer (64 bit)</a> a Python 3.8/3.9, 64-bit (exe installer) for Windows.</p>
+<div class="admonition-beware admonition">
+<p class="admonition-title">BEWARE:</p>
+<ul class="simple">
+<li><p>To install miniconda SYSTEM-WIDE for ALL users, this does require administrator permissions;
+every users can then create their own environments with the conda tool.</p></li>
+<li><p>Please do NOT make Conda the default python for the system if you don’t want it to interfere with other Python installations you might have,
+eg. Pythons of ArcGIS and QGis etc</p></li>
+</ul>
+</div>
+<p>Install Miniconda on your computer by double clicking the installer and install it into a directory you want.</p>
+<p>Install it to <strong>all users</strong> and use default settings.</p>
+<p>Additional install information:
+<a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/index.html">https://conda.io/projects/conda/en/latest/user-guide/index.html</a></p>
+</section>
+<section id="verifying-the-installation">
+<h1>Verifying the installation<a class="headerlink" href="#verifying-the-installation" title="Permalink to this headline">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a convention, whenever I demonstrate Python codes or using commands on the the shell/cmd commandline,
+using the <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol implies a <code class="docutils literal notranslate"><span class="pre">comment</span></code>. This line, respectively everything after that symbol is NOT to be executed.</p>
+</div>
+<p>In order to test that the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager works we have to go through a few more steps:
+After successful installation you should have a menu entry in the Windows Start Menu:</p>
+<p><code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Prompt</span></code></p>
+<p>This is a Windows CMD (Commandline window, that “knows” about, where your Miniconda/Anaconda installation lies, and where to find the <code class="docutils literal notranslate"><span class="pre">conda</span></code> tool (without interfering other Python installations on your computer).
+After it opens it should display somehow like so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span>
+
+<span class="ow">or</span>
+
+<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>On the command line type command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">--version</span></code> in order to see if the command is successful, it should show the version of the conda tool.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span> <span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">conda</span> <span class="mf">4.9.2</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h1>Creating environments and install packages<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>It is important to understand, that you are always “residing” somewhere in some folder. This will in particular important to make sure that you find your scripts, notebooks and the working data, which ideally reside under the same directory hierarchy.</p>
+<p>In order to be well organised throughout the course, please create a working folder/directory, where you will put your scripts and data files for the lab sessions and homeworks.
+On Windows you have your local user folder, typically <code class="docutils literal notranslate"><span class="pre">C:\Users\Alexander</span></code>. Open with the Windows File Explorer and create a new folder in this folder, with the name <code class="docutils literal notranslate"><span class="pre">biogeomon2022</span></code>.</p>
+<div class="admonition-beware admonition">
+<p class="admonition-title">BEWARE:</p>
+<p>Make sure you navigate explicitly into your correct working folder “biogeomon2022”. As we will always start or environment from the command line, here are two very simple practical steps to navigate on the commandline.</p>
+</div>
+<p>Open the Anaconda/conda command prompt from the Start menu, and type the commands shown below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">:</span>
+<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+</pre></div>
+</div>
+<p>You can see which files are inside this folder by using the <code class="docutils literal notranslate"><span class="pre">dir</span></code> command. (On Mac and Linux it is <code class="docutils literal notranslate"><span class="pre">ls</span></code>) and it will print information and files of your current folder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">:</span>
+<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+
+<span class="nb">dir</span>
+
+<span class="o">...</span> <span class="n">output</span> <span class="n">below</span>
+
+<span class="n">Volume</span> <span class="ow">in</span> <span class="n">drive</span> <span class="n">C</span> <span class="ow">is</span> <span class="n">Windows</span>
+<span class="n">Volume</span> <span class="n">Serial</span> <span class="n">Number</span> <span class="ow">is</span> <span class="mf">5E4</span><span class="n">C</span><span class="o">-</span><span class="n">FED5</span>
+
+<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+
+<span class="mf">29.09.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">.</span>
+<span class="mf">29.09.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">..</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> basically represents a typical Python virtualenv command. You can create a several distinct environments, with different Python version, and with different packages to be installed.
+This will come in very handy to <em>try out</em> new libraries/packages/tools, without breaking you working installation. How to use the conda command?</p>
+<p><a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html">https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html</a></p>
+<p>We want to use a modern Python version 3.8, but some packages might not be fully available or tested in Python 3.9. Here it becomes obvious how practical virtual environments can be.
+They help you to keep various Python versions around without messing up your system, and at the same time, keep several working environments with different, possibly conflicting versions of different Python packages.</p>
+<p>There are two main ways of creating a <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment.</p>
+<p>The more professional/reproducible way is to use a so called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. In the file the environment name, the package channels, Python version and all desired packages are declared.
+This way, you should be able to install the same environment in different computers, therfore improving the reliability of having the same packages etc installed. You can even go so far as to specify the exact package version.</p>
+<p>Make sure you are using the correct folder on the University computers. In the Windows File Explorer, go via <code class="docutils literal notranslate"><span class="pre">this</span> <span class="pre">PC</span></code>, <code class="docutils literal notranslate"><span class="pre">c:\Users</span></code> to <code class="docutils literal notranslate"><span class="pre">your</span> <span class="pre">account</span> <span class="pre">name</span></code> folder.</p>
+<p>Now, please download the prepared <a class="reference external" href="../_static/data/environment.yml">environment.yml</a> file and save it to your newly created working folder.</p>
+<p>To check, in the commandline window (Anaconda prompt) navigate to your working folder again and list the contents of the folder with <code class="docutils literal notranslate"><span class="pre">dir</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">c</span><span class="p">:</span>
+
+<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+
+<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="nb">dir</span>
+
+<span class="o">...</span> <span class="n">output</span> <span class="n">below</span>
+
+<span class="n">Volume</span> <span class="ow">in</span> <span class="n">drive</span> <span class="n">C</span> <span class="ow">is</span> <span class="n">Windows</span>
+<span class="n">Volume</span> <span class="n">Serial</span> <span class="n">Number</span> <span class="ow">is</span> <span class="mf">5E4</span><span class="n">C</span><span class="o">-</span><span class="n">FED5</span>
+
+<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+
+<span class="mf">29.10.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">.</span>
+<span class="mf">29.10.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">..</span>
+<span class="mf">29.10.2021</span>  <span class="mi">08</span><span class="p">:</span><span class="mi">51</span> <span class="n">AM</span>            <span class="mi">693</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>You should see the newly downloaded file in your folder.
+Now let’s install the enviroment with conda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>This will take some time.</p>
+<p>In the <a class="reference external" href="test_installation.html">next steps we will verify the installation and test that everything works</a> in our new <code class="docutils literal notranslate"><span class="pre">geopy2021</span></code> conda Python environment and configure Jupyter Notebooks.</p>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="overview.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">The Pangeo Python Ecosystem</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="alt_install_miniconda.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Alternative installation method for Conda environments</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, Alexander Kmoch.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

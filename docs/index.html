@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to BIOGEOMON 2022 Workshop’s documentation! &#8212; BIOGEOMON 2022 Workshop 1.0 documentation</title>
+    <title>Welcome to the BIOGEOMON 2022 Workshop! &#8212; BIOGEOMON 2022 Workshop 1.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -31,6 +31,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The Pangeo Python Ecosystem" href="L0_install/overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -67,7 +68,42 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L0_install/overview.html">
+  The Pangeo Python Ecosystem
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L0_install/Installing_Miniconda_GIS.html">
+  Installation and setup for Python with Miniconda
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L0_install/alt_install_miniconda.html">
+  Alternative installation method for Conda environments
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L0_install/test_installation.html">
+  Test that everything works
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L1_data/workshop.html">
+  Spatio-temporal trend analysis of temperature using Python
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="L2_fair/overview.html">
+  FAIR and Reproducible Research
+ </a>
+</li>
+
     
 </ul>
       </div>
@@ -78,6 +114,14 @@
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/LGeoinformatics" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
       </ul>
       </div>
       
@@ -122,8 +166,25 @@
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Welcome to BIOGEOMON 2022 Workshop’s documentation!
+   Welcome to the BIOGEOMON 2022 Workshop!
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#license">
+     License
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#acknowledgments">
+     Acknowledgments
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-geospatial-python">
+     More Geospatial Python
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indices-and-tables">
@@ -151,10 +212,98 @@
               
               <div>
                 
-  <section id="welcome-to-biogeomon-2022-workshop-s-documentation">
-<h1>Welcome to BIOGEOMON 2022 Workshop’s documentation!<a class="headerlink" href="#welcome-to-biogeomon-2022-workshop-s-documentation" title="Permalink to this headline">#</a></h1>
+  <section id="welcome-to-the-biogeomon-2022-workshop">
+<h1>Welcome to the BIOGEOMON 2022 Workshop!<a class="headerlink" href="#welcome-to-the-biogeomon-2022-workshop" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://biogeomon2022.ut.ee/pre-conference-workshop">BIOGEOMON Pre-conference
+Workshop</a></p>
+<a class="reference internal image-reference" href="_images/biogeomon_logo_0.jpg"><img alt="_images/biogeomon_logo_0.jpg" src="_images/biogeomon_logo_0.jpg" style="height: 100px;" /></a>
+<p>There are wide range of global or regional level climate data available
+in a gridded format. Under the changing climate, we need to quantify the
+variability of temperature and rainfall patterns to understand the
+impact of climate change on ecosystems. In this workshop, we teach the
+participants how to handle NetCDF datasets, apply the Mann-Kendall (MK)
+test and calculate Sen’s slope (SS) values on a gridded climate dataset.</p>
+<a class="reference internal image-reference" href="_images/pangeo_icon.png"><img alt="Pangeo" class="align-right" src="_images/pangeo_icon.png" style="height: 100px;" /></a>
+<p>We will be using Python packages from the
+<a class="reference external" href="https://pangeo.io/about.html">Pangeo</a> community, including
+<a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks and the
+<a class="reference external" href="https://xarray.pydata.org/en/latest/">Xarray</a> toolkit for working
+with labeled multi-dimensional arrays of data. In addition, we will
+demonstrate a few basic steps how to improve reproducibility and
+pro-actively apply FAIR principles when sharing and archiving data and
+code online for publishing via <a class="reference external" href="https://github.com/">GitHub</a> and
+<a class="reference external" href="https://zenodo.org/">Zenodo</a>.</p>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1 - Introduction and Installation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/overview.html">The Pangeo Python Ecosystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/Installing_Miniconda_GIS.html">Installation and setup for Python with Miniconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/Installing_Miniconda_GIS.html#verifying-the-installation">Verifying the installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/Installing_Miniconda_GIS.html#id1">Creating environments and install packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/alt_install_miniconda.html">Alternative installation method for Conda environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/test_installation.html">Test that everything works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L0_install/test_installation.html#setting-up-jupyter-notebook">Setting up Jupyter Notebook</a></li>
+</ul>
 </div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2 - The Workshop:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html">Spatio-temporal trend analysis of temperature using Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html#reading-the-netcdf-file-with-xarray">Reading the NetCDF file with Xarray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html#getting-data-ready-for-trend-analysis">Getting data ready for trend analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html#trend-analysis-using-the-mann-kendall-mk-test">Trend analysis using the Mann-Kendall (MK) test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html#plotting-the-trend-analysis-results">Plotting the trend analysis results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1_data/workshop.html#references">References</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3 - FAIR Github and Zenodo:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="L2_fair/overview.html">FAIR and Reproducible Research</a></li>
+</ul>
+</div>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
+<p>Creative Commons Attribution-ShareAlike 4.0
+<a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a></p>
+<p><a class="reference external" href="https://landscape-geoinformatics.ut.ee/home-0">Landscape Geoinformatics (UT)</a></p>
+Alexander Kmoch <a href="https://orcid.org/0000-0003-4386-4450"><img src="_static/orcid_icon.png" width="12px" height="12px" /></a>
+<br />
+Holger Virro <a href="https://orcid.org/0000-0001-6110-5453"><img src="_static/orcid_icon.png" width="12px" height="12px" /></a>
+<br />
+Bruno Montibeller <a href="https://orcid.org/0000-0002-5250-8450"><img src="_static/orcid_icon.png" width="12px" height="12px" /></a>
+<br />
+Evelyn Uuemaa <a href="https://orcid.org/0000-0002-0782-6740"><img src="_static/orcid_icon.png" width="12px" height="12px" /></a>
+<br /><p>Spatio-temporal trend analysis of spatial climate data (temperature and
+rainfall) using Python (2021) Alexander Kmoch, Bruno Montibeller, Holger
+Virro, Evelyn Uuemaa, <a class="reference external" href="https://doi.org/10.5281/zenodo.5876348"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5876348.svg" /></a></p>
+</section>
+<section id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">#</a></h2>
+<p>Tartu Ülikooli ASTRA projekt PER ASPERA,
+Maateaduste ja ökoloogia doktorikool 2016-2020,
+Projekti kood: 2014–2020.4.01.16–0027</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/eas.png"><img alt="_images/eas.png" src="_images/eas.png" style="height: 100px;" /></a>
+</figure>
+<p>ETAG Mobilitas Pluss / MOBERC34</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/mobilitaspluss.jpg"><img alt="_images/mobilitaspluss.jpg" src="_images/mobilitaspluss.jpg" style="height: 100px;" /></a>
+</figure>
+<p>Landscape Geoinformatics Lab, University of Tartu</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/lgeo_logo_eng_transparent.png"><img alt="_images/lgeo_logo_eng_transparent.png" src="_images/lgeo_logo_eng_transparent.png" style="height: 80px;" /></a>
+</figure>
+</section>
+<section id="more-geospatial-python">
+<h2>More Geospatial Python<a class="headerlink" href="#more-geospatial-python" title="Permalink to this headline">#</a></h2>
+<p>We are also teaching a course with open materials:</p>
+<p><a class="reference external" href="https://kodu.ut.ee/~kmoch/geopython2021/">https://kodu.ut.ee/~kmoch/geopython2021/</a></p>
+<p>Geospatial Analysis with Python: The course teaches you how to do different GIS-related tasks in the Python programming language. Each lesson is a tutorial with specific topic(s) where the aim is to learn how to solve common GIS-related problems and tasks using Python tools. In the lessons we use only publicly available data which can be used and downloaded by anyone anywhere. In this course, we assume that you know the basics of Python programming - but we will also repeat Python basics in order to refresh everyone’s memory.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/Geopython_UT_banner.jpg"><img alt="_images/Geopython_UT_banner.jpg" src="_images/Geopython_UT_banner.jpg" style="height: 80px;" /></a>
+</figure>
+</section>
 </section>
 <section id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">#</a></h1>
@@ -171,6 +320,13 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="L0_install/overview.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Pangeo Python Ecosystem</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
               
           </main>

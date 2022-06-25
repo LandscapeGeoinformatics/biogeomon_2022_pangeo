@@ -47,4 +47,4 @@ Projekti kood: 2014–2020.4.01.16–0027
 
 ETAG Mobilitas Pluss / MOBERC34
 
-<img alt="EAS " style="border-width:0" src="docs/_source/ _static/mobilitaspluss.jpg" height="100" />
+<img alt="MOBERC34 " style="border-width:0" src="docs/_source/_static/mobilitaspluss.jpg" height="100" />

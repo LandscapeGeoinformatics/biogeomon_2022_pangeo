@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Alternative installation method for Conda environments &#8212; BIOGEOMON 2022 Workshop 1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Test that everything works" href="test_installation.html" />
+    <link rel="prev" title="Installation and setup for Python with Miniconda" href="Installing_Miniconda_GIS.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/logo_ut.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="overview.html">
+  The Pangeo Python Ecosystem
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="Installing_Miniconda_GIS.html">
+  Installation and setup for Python with Miniconda
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Alternative installation method for Conda environments
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="test_installation.html">
+  Test that everything works
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L1_data/workshop.html">
+  Spatio-temporal trend analysis of temperature using Python
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L2_fair/overview.html">
+  FAIR and Reproducible Research
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/LGeoinformatics" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="alternative-installation-method-for-conda-environments">
+<h1>Alternative installation method for Conda environments<a class="headerlink" href="#alternative-installation-method-for-conda-environments" title="Permalink to this headline">#</a></h1>
+<p>In the previous section we installed our specific conda Python environment with a pre-defined environment configuration file. In this section we show an alternative variant how you can install conda environments in a more flexible way if you need to.</p>
+<div class="admonition-beware admonition">
+<p class="admonition-title">BEWARE:</p>
+<p>Please DO NOT follow these steps, if you already have the environment installed via the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> configuration above.</p>
+</div>
+<p>The other variant is typically more widely used in exploratory setups. It is a step-by-step procedure. Here we are making sure that Python in version 3.8 will be installed and that we want to explicitly use the additional package channel <cite>conda-forge</cite>.
+And we give the environment a name (-n).</p>
+<p>If you would create your environment manually, it would go like that:
+Open the <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">prompt</span></code> from the Start Menu and type the command below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">biogeomon2022alt</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.9</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+<p>Ok, now that we have installed a Python working environment with the name <code class="docutils literal notranslate"><span class="pre">biogeomon2022alt</span></code> with our desired library packages, we can check installed environments just to be sure.
+In order to show all environments that have already been created you can ask conda to list these:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span>  <span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+</pre></div>
+</div>
+<p>Now we want to activate that environment, install additional packages and start working with it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span>  <span class="n">activate</span> <span class="n">biogeomon2022alt</span>
+
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Install GIS related packages with conda by running in command prompt following commands (in the same order as they are listed).
+Make sure you are in the correct environment (don’t install into <code class="docutils literal notranslate"><span class="pre">base</span></code>, install new packages ideally only into your designated created environments)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">gdal</span> <span class="n">fiona</span> <span class="n">shapely</span> <span class="n">geopandas</span>
+
+<span class="c1"># Install matplotlib and Jupyter Lab/Notebook</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">matplotlib</span> <span class="n">jupyter</span> <span class="n">jupyterlab</span>
+
+<span class="c1"># Install scipy, pysal and mapclassify</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">scipy</span> <span class="n">pysal</span> <span class="n">mapclassify</span>
+
+<span class="c1"># Install rasterio and rasterstats</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">rasterio</span> <span class="n">rasterstats</span>
+
+<span class="c1"># Install seaborn</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">seaborn</span>
+
+<span class="c1"># Install geoplot and cartopy</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">geoplot</span> <span class="n">cartopy</span> <span class="n">geoviews</span>
+
+<span class="c1"># Install</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">owslib</span> <span class="n">requests</span>
+
+<span class="c1"># Install earthpy</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">earthpy</span>
+
+<span class="c1"># Install Folium</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">folium</span>
+</pre></div>
+</div>
+<p>In the next step we will verify the installation of our conda Python environment and configure Jupyter Notebooks.</p>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Installing_Miniconda_GIS.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Installation and setup for Python with Miniconda</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="test_installation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Test that everything works</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, Alexander Kmoch.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
