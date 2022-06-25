@@ -208,31 +208,19 @@ In order to show all environments that have already been created you can ask con
 </div>
 <p>Install GIS related packages with conda by running in command prompt following commands (in the same order as they are listed).
 Make sure you are in the correct environment (don’t install into <code class="docutils literal notranslate"><span class="pre">base</span></code>, install new packages ideally only into your designated created environments)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">gdal</span> <span class="n">fiona</span> <span class="n">shapely</span> <span class="n">geopandas</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pandas</span> <span class="n">numpy</span> <span class="n">xarray</span> <span class="n">dask</span> <span class="n">hdf4</span> <span class="n">netcdf4</span> <span class="n">hdf5</span> <span class="n">h5netcdf</span>
 
 <span class="c1"># Install matplotlib and Jupyter Lab/Notebook</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">matplotlib</span> <span class="n">jupyter</span> <span class="n">jupyterlab</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">matplotlib</span> <span class="n">jupyter</span> <span class="n">notebook</span> <span class="n">jupyterlab</span> <span class="n">ipywidgets</span>
 
-<span class="c1"># Install scipy, pysal and mapclassify</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">scipy</span> <span class="n">pysal</span> <span class="n">mapclassify</span>
+<span class="c1"># Install intake and some dependencies</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">aiohttp</span> <span class="n">intake</span> <span class="n">intake</span><span class="o">-</span><span class="n">xarray</span>
 
-<span class="c1"># Install rasterio and rasterstats</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">rasterio</span> <span class="n">rasterstats</span>
+<span class="c1"># Install rasterio and some raster libraries link for xarray</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">rasterio</span> <span class="n">rioxarry</span>
 
-<span class="c1"># Install seaborn</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">seaborn</span>
-
-<span class="c1"># Install geoplot and cartopy</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">geoplot</span> <span class="n">cartopy</span> <span class="n">geoviews</span>
-
-<span class="c1"># Install</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">owslib</span> <span class="n">requests</span>
-
-<span class="c1"># Install earthpy</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">earthpy</span>
-
-<span class="c1"># Install Folium</span>
-<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">folium</span>
+<span class="c1"># Install pymannkendall</span>
+<span class="p">(</span><span class="n">biogeomon2022alt</span><span class="p">)</span> <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pymannkendall</span>
 </pre></div>
 </div>
 <p>In the next step we will verify the installation of our conda Python environment and configure Jupyter Notebooks.</p>

@@ -163,4 +163,4 @@ Now let's install the enviroment with conda:
 
 This will take some time.
 
-In the `next steps we will verify the installation and test that everything works <test_installation.html>`_ in our new ``geopy2021`` conda Python environment and configure Jupyter Notebooks.
+In the `next steps we will verify the installation and test that everything works <test_installation.html>`_ in our new ``biogeomon2022`` conda Python environment and configure Jupyter Notebooks.

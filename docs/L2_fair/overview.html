@@ -165,8 +165,28 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#use-basic-github">
-   Use basic Github
+  <a class="reference internal nav-link" href="#use-basic-git-and-github">
+   Use basic Git and GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-fresh-start">
+   a) Fresh start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#b-local-folder-version-control">
+   b) Local folder version control
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#c-existing-online-github-repository">
+   c) Existing online GitHub repository
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-cheat-sheet-for-your-convenience">
+   Git Cheat Sheet for your convenience
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -175,13 +195,18 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#launch-mybinder-online-notebook-demo">
-   Launch MyBinder online notebook demo
+  <a class="reference internal nav-link" href="#reproducibility-guidelines">
+   Reproducibility guidelines
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reproducibility-guidelines">
-   Reproducibility guidelines
+  <a class="reference internal nav-link" href="#more-skills-the-carpentries">
+   More skills - The Carpentries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-mybinder-online-notebook-demo">
+   Example: MyBinder online notebook demo
   </a>
  </li>
 </ul>
@@ -207,12 +232,19 @@
                 
   <section id="fair-and-reproducible-research">
 <h1>FAIR and Reproducible Research<a class="headerlink" href="#fair-and-reproducible-research" title="Permalink to this headline">#</a></h1>
-<img alt="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" src="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" />
-<p><a class="reference external" href="https://www.openaire.eu/how-to-make-your-data-fair">https://www.openaire.eu/how-to-make-your-data-fair</a></p>
-<p>Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://www.openaire.eu/images/Guides/EC_FAIR_data.png"><img alt="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" src="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://www.openaire.eu/how-to-make-your-data-fair">https://www.openaire.eu/how-to-make-your-data-fair</a></span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Check out the following article in the Journal Scientific Data:</p>
+<blockquote>
+<div><p>Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></p>
 <p><a class="reference external" href="https://www.nature.com/articles/sdata201618">https://www.nature.com/articles/sdata201618</a></p>
-<section id="use-basic-github">
-<h2>Use basic Github<a class="headerlink" href="#use-basic-github" title="Permalink to this headline">#</a></h2>
+</div></blockquote>
+<section id="use-basic-git-and-github">
+<h2>Use basic Git and GitHub<a class="headerlink" href="#use-basic-git-and-github" title="Permalink to this headline">#</a></h2>
 <p>Version control is better than mailing files back and forth:</p>
 <ul class="simple">
 <li><p>Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of files are saved, it’s always possible to go back in time to see exactly who wrote what on a particular day, or what version of a program was used to generate a particular set of results.</p></li>
@@ -221,35 +253,184 @@
 </ul>
 <p>Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).</p>
 <p>Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://git-scm.com/">Git</a> is a <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">version control</a> system.</p></li>
+<li><p><a class="reference external" href="https://github.com/">GitHub</a> is one of several online platform for public and distributed Git repository access and sharing. Others are <a class="reference external" href="https://bitbucket.org/">Bitbucket</a> or <a class="reference external" href="https://gitlab.com/">Gitlab</a> and large organizations often have their own instances as well (e.g. Uni Tartu has an own Gitlab).</p></li>
+<li><p>Typically, you either start a) completely fresh from the start, b) with a local folder that you want to put under version control and share, or c) with an existing online GitHub repository, that you want to update or contribute to.</p></li>
+</ol>
+</section>
+<section id="a-fresh-start">
+<h2>a) Fresh start<a class="headerlink" href="#a-fresh-start" title="Permalink to this headline">#</a></h2>
+<p>Go on Github (or your preferred Git platform), and create a new repository. On Github or Gitlab it will tell you the exact steps to initial a fresh repository or link a local folder.</p>
+<p>Something along those lines:</p>
+<blockquote>
+<div><p>The repository for this project is empty</p>
+<p>You can get started by cloning the repository or start adding files to it with one of the following options.</p>
+</div></blockquote>
+<p><strong>Command line instructions</strong></p>
+<p>You can also upload existing files from your computer using the instructions below.
+Git global setup</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;Alexander Kmoch&quot;</span>
+git config --global user.email <span class="s2">&quot;alexander.kmoch@ut.ee&quot;</span>
+</pre></div>
+</div>
+<p><strong>Clone</strong> the new empty repository</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:allixender/test.git
+<span class="nb">cd</span> test12
+git switch -c main
+touch README.md
+git add README.md
+git commit -m <span class="s2">&quot;add README&quot;</span>
+git push -u origin main
+</pre></div>
+</div>
+<p><strong>Push</strong> an existing folder into version control</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> existing_folder
+git init --initial-branch<span class="o">=</span>main
+git remote add origin git@github.com:allixender/test.git
+git add .
+git commit -m <span class="s2">&quot;Initial commit&quot;</span>
+git push -u origin main
+</pre></div>
+</div>
+<p><strong>OR</strong> Push and link an existing Git repository</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> existing_repo
+git remote rename origin old-origin
+git remote add origin git@github.com:allixender/test.git
+git push -u origin --all
+git push -u origin --tags
+</pre></div>
+</div>
+</section>
+<section id="b-local-folder-version-control">
+<h2>b) Local folder version control<a class="headerlink" href="#b-local-folder-version-control" title="Permalink to this headline">#</a></h2>
+<p>Typically, you can start immediately and initialize Git version control with no further hassle:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git init .
+</pre></div>
+</div>
+<p>And from hence you will do the basic workflow as follows, over and over:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git status
+</pre></div>
+</div>
+<p>You can use/create the <strong>.gitignore</strong> file to ignore temporary or non-relevant files or prevent accidentally adding sensitive files to the version control.</p>
+<p>The most basic workflow is checking with “git status” as seen above and selectively adding updated or new files to the commit process (staging) …</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;file&gt;
+
+<span class="c1"># or</span>
+
+git add .
+</pre></div>
+</div>
+<p>The you commit (like checking in for good, register for history). Provide a message, for yourself or others, this will be related to that particular commit.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git commit -m <span class="s2">&quot;commit message for yourself or others&quot;</span>
+</pre></div>
+</div>
+<p>If your local repository folder is already linked to an online Git repository, like GitHub, you can “push” the latest commits (aka) changes to the online version, where they are “safe” and can be seen by others, and yourself, in case you delete your local folder or want to continue working on another computer.
+The exact command depends on your initial configuration, but don’t worry, lots of practical decisions are almost automatic.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin
+
+<span class="c1"># git push origin main</span>
+<span class="c1"># git push origin master</span>
+<span class="c1"># ... you will see, typically it&#39;s done once and you can just do &quot;git push origin&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="c-existing-online-github-repository">
+<h2>c) Existing online GitHub repository<a class="headerlink" href="#c-existing-online-github-repository" title="Permalink to this headline">#</a></h2>
+<p>If you have an own existing GitHub repository online, you would typically “clone” it into a local working directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone &lt;your online GitHub repository URL&gt;
+</pre></div>
+</div>
+<p>Once you start relating between your local Git folder, your GitHub repository (in your account) and other online GitHub repositories, you need a few more things.</p>
+<p>If you have changes in your upstream (origin, e.g. GitHub) that you know of and you need to update your local Git folder:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin
+<span class="c1"># git pull origin main</span>
+<span class="c1"># git pull origin master</span>
+<span class="c1"># ... you will see, typically it&#39;s done once and you can just do &quot;git pull origin&quot;</span>
+</pre></div>
+</div>
+<p>If you want to contribute to someone else’s GitHub repository, <strong>don’t</strong> immediately clone their repo into your local folder. Rather, create a <strong>fork</strong> online in GitHub, this will add a linked copy into your account.
+Then “clone” that repository from your account into your local working folder. Once you have “pushed” your local changes back online to your online GitHub repository, you can create a <em>pull request</em> to the other person’s original repository.</p>
+<p>If you by any chance run into the situation that you have online and local accidentally changed the same file, you will run into a “merge conflict”, then “pull” will not be allowed by Git. Instead you will have “fetch” the changes and then merge (just really local manual deciding and updating) and “commit” and “push” the merged files again.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># assuming your default working branch is main (online aka origin)</span>
+<span class="c1"># git fetch loads the online version without applying the changes</span>
+git fetch origin main
+<span class="c1"># with git merge you tell Git to apply changes from the origin/main branch to your local (main) working branch</span>
+git merge origin/main
+<span class="c1"># this can cause the message &quot;merge conflict&quot; and then tell you which files you&#39;ll have to &quot;repair&quot; or decide which is the more important one</span>
+<span class="c1"># ... you editing the files</span>
+git add &lt;the repaired target files&gt;
+git commit -m <span class="s2">&quot;fixed merge conflict&quot;</span>
+git push origin main
+</pre></div>
+</div>
+</section>
+<section id="git-cheat-sheet-for-your-convenience">
+<h2>Git Cheat Sheet for your convenience<a class="headerlink" href="#git-cheat-sheet-for-your-convenience" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.jrebel.com/blog/git-cheat-sheet">https://www.jrebel.com/blog/git-cheat-sheet</a></p></li>
 <li><p><a class="reference external" href="https://www.jrebel.com/system/files/git-cheat-sheet.pdf">https://www.jrebel.com/system/files/git-cheat-sheet.pdf</a></p></li>
 </ul>
-<p>Since 1998, Software Carpentry has been teaching researchers the computing skills they need to get more done in less time and with less pain. Our volunteer instructors have run hundreds of events for more than 34,000 researchers since 2012. All of our lesson materials are freely reusable under the Creative Commons - Attribution license.</p>
-<p>The Software Carpentry Foundation and its sibling lesson project, Data Carpentry, have merged to become The Carpentries, a fiscally sponsored project of Community Initiatives, a 501(c)3 non-profit incorporated in the United States. See the staff page for The Carpentries.</p>
+</section>
+<section id="zenodo">
+<h2>ZENODO<a class="headerlink" href="#zenodo" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>Know how to deposit code and data in a indexed scientific repository with a DOI</p>
+</div></blockquote>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg"><img alt="https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg" height="100" src="https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg" /></a>
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://zenodo.org/">https://zenodo.org/</a></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Zenodo assigns all publicly available uploads a Digital Object Identifier (DOI) to make the upload easily and uniquely citeable. Zenodo further supports harvesting of all content via an open metadata sharing protocol.</p>
+<ul class="simple">
+<li><p>(All) Research Shared, your one stop research shop!</p></li>
+<li><p>Discoverable, be found!</p></li>
+<li><p>create your own repository</p></li>
+<li><p>more than just a drop box! Your research output is stored safely for the future in same cloud infrastructure as research data from CERN’s Large Hadron Collider and using CERN’s battle-tested repository software Invenio, which is used by some of the world’s largest repositories such as INSPIRE HEP and CERN Document Server.</p></li>
+<li><p>Reporting - tell your funding agency! Zenodo is integrated into reporting lines for research funded by the European Commission via OpenAIRE.</p></li>
+</ul>
+</section>
+<section id="reproducibility-guidelines">
+<h2>Reproducibility guidelines<a class="headerlink" href="#reproducibility-guidelines" title="Permalink to this headline">#</a></h2>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.svg"><img alt="https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.svg" height="100" src="https://reproducible-agile.github.io/public/images/reproducible-AGILE-logo-square.svg" /></a>
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://reproducible-agile.github.io/">https://reproducible-agile.github.io/</a></span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research">https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research</a></p>
+<p>Reproducible research is a crucial topic for any research domain using computational processes, including GIScience and EarthSciences. Recent research has shown, that many publications leave room for improvement regarding their computational reproducibility.  The AGILE council generously supports an initiative for development of new guidelines for AGILE conference submissions to improve reproducibility. The planned duration of the initiative is January 2019 to June 2019. The initiative will prepare new author guidelines and reviewer guidelines suitable for all submission types (full, short, poster).</p>
+<p><a class="reference external" href="https://osf.io/numa5">AGILE Reproducible Paper Guidelines - December 2020.pdf</a></p>
+</section>
+<section id="more-skills-the-carpentries">
+<h2>More skills - The Carpentries<a class="headerlink" href="#more-skills-the-carpentries" title="Permalink to this headline">#</a></h2>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="https://carpentries.org/assets/img/TheCarpentries.svg"><img alt="https://carpentries.org/assets/img/TheCarpentries.svg" height="100" src="https://carpentries.org/assets/img/TheCarpentries.svg" /></a>
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://carpentries.org/">https://carpentries.org/</a></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Since 1998, <strong>Software Carpentry</strong> has been teaching researchers the computing skills they need to get more done in less time and with less pain. Our volunteer instructors have run hundreds of events for more than 34,000 researchers since 2012. All of our lesson materials are freely reusable under the <strong>Creative Commons - Attribution license</strong>.</p>
+<p>The <strong>Software Carpentry</strong> Foundation and its sibling lesson project, <strong>Data Carpentry</strong>, have merged to become <strong>The Carpentries</strong>, a fiscally sponsored project of Community Initiatives, a 501(c)3 non-profit incorporated in the United States. See the staff page for The Carpentries.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/">https://swcarpentry.github.io/git-novice/</a></p></li>
 </ul>
 </section>
-<section id="zenodo">
-<h2>ZENODO<a class="headerlink" href="#zenodo" title="Permalink to this headline">#</a></h2>
+<section id="example-mybinder-online-notebook-demo">
+<h2>Example: MyBinder online notebook demo<a class="headerlink" href="#example-mybinder-online-notebook-demo" title="Permalink to this headline">#</a></h2>
+<p>Stitching it all together:</p>
 <ul class="simple">
-<li><p>know how to deposit code and data in a indexed scientific repository with a DOI</p></li>
+<li><p>this workshop has a GitHub repository, with the notebook and the <em>conda</em> / <em>Python</em> environment under version control</p></li>
+<li><p>the Binder software on <a class="reference external" href="https://mybinder.org/">MyBinder</a> can build an executable container from the repository</p></li>
+<li><p>we can deposit and archive the whole workshop materials self-contained including the reproducible notebook workflow with a DOI on Zenodo, make it citeable</p></li>
+<li><p>the DOI can be cited and is indexed in OpenAIRE and can be used in project/science reporting and other scientific works</p></li>
 </ul>
-</section>
-<section id="launch-mybinder-online-notebook-demo">
-<h2>Launch MyBinder online notebook demo<a class="headerlink" href="#launch-mybinder-online-notebook-demo" title="Permalink to this headline">#</a></h2>
-<p><a class="reference external" href="https://mybinder.org/v2/gh/LandscapeGeoinformatics/biogeomon_2022_pangeo/HEAD?labpath=notebook%2Fworkshop.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-</section>
-<section id="reproducibility-guidelines">
-<h2>Reproducibility guidelines<a class="headerlink" href="#reproducibility-guidelines" title="Permalink to this headline">#</a></h2>
-<p>AGILE Reproducible Paper Guidelines - December 2020.pdf</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research">https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research</a></p>
-<p>Reproducible research is a crucial topic for any research domain using computational processes, including GIScience and EarthSciences. Recent research has shown, that many publications leave room for improvement regarding their computational reproducibility.  The AGILE council generously supports an initiative for development of new guidelines for AGILE conference submissions to improve reproducibility. The planned duration of the initiative is January 2019 to June 2019. The initiative will prepare new author guidelines and reviewer guidelines suitable for all submission types (full, short, poster).</p>
-<p><a class="reference external" href="https://reproducible-agile.github.io/">https://reproducible-agile.github.io/</a></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://osf.io/numa5">https://osf.io/numa5</a></p></li>
-</ul>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/LandscapeGeoinformatics/biogeomon_2022_pangeo/HEAD?labpath=notebook%2Fworkshop.ipynb"><img alt="https://mybinder.org/badge_logo.svg" src="https://mybinder.org/badge_logo.svg" /></a>
+<p>Spatio-temporal trend analysis of spatial climate data (temperature and
+rainfall) using Python (2021) Alexander Kmoch, Bruno Montibeller, Holger
+Virro, Evelyn Uuemaa, <a class="reference external" href="https://doi.org/10.5281/zenodo.5876348"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5876348.svg" /></a></p>
 </section>
 </section>
 

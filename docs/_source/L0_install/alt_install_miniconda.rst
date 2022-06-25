@@ -39,31 +39,20 @@ Make sure you are in the correct environment (don't install into ``base``, insta
 
 .. code::
 
-    (biogeomon2022alt) conda install -c conda-forge numpy pandas gdal fiona shapely geopandas
+    (biogeomon2022alt) conda install -c conda-forge pandas numpy xarray dask hdf4 netcdf4 hdf5 h5netcdf
 
     # Install matplotlib and Jupyter Lab/Notebook
-    (biogeomon2022alt) conda install -c conda-forge matplotlib jupyter jupyterlab
+    (biogeomon2022alt) conda install -c conda-forge matplotlib jupyter notebook jupyterlab ipywidgets
 
-    # Install scipy, pysal and mapclassify
-    (biogeomon2022alt) conda install -c conda-forge scipy pysal mapclassify
+    # Install intake and some dependencies
+    (biogeomon2022alt) conda install -c conda-forge aiohttp intake intake-xarray
 
-    # Install rasterio and rasterstats
-    (biogeomon2022alt) conda install -c conda-forge rasterio rasterstats
+    # Install rasterio and some raster libraries link for xarray
+    (biogeomon2022alt) conda install -c conda-forge rasterio rioxarry
 
-    # Install seaborn
-    (biogeomon2022alt) conda install -c conda-forge seaborn
+    # Install pymannkendall
+    (biogeomon2022alt) conda install -c conda-forge pymannkendall
 
-    # Install geoplot and cartopy
-    (biogeomon2022alt) conda install -c conda-forge geoplot cartopy geoviews
-
-    # Install
-    (biogeomon2022alt) conda install -c conda-forge owslib requests
-
-    # Install earthpy
-    (biogeomon2022alt) conda install -c conda-forge earthpy
-
-    # Install Folium
-    (biogeomon2022alt) conda install -c conda-forge folium
 
 
 In the next step we will verify the installation of our conda Python environment and configure Jupyter Notebooks.

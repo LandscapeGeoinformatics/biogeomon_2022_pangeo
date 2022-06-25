@@ -22,10 +22,24 @@ At first start the Python console:
 
 .. code:: python
 
-     import numpy as np
-     import pandas as pd
-     import matplotlib.pyplot as plt
-     import xarray as xr
+
+    # Processing
+    import pandas as pd
+    import numpy as np
+    import xarray as xr
+    import rioxarray # for CRS management in Xarray
+
+    # Data loading
+    import intake
+    import intake_xarray # Xarray wrapper for Intake
+    import h5netcdf # for NetCDF reading
+
+    # Plotting
+    import matplotlib
+    import matplotlib.pyplot as plt
+
+    # Trend analysis
+    import pymannkendall as mk
 
 
 If you don't receive any errors, everything should be working!

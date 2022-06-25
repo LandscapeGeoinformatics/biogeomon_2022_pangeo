@@ -68,7 +68,7 @@ License
 Creative Commons Attribution-ShareAlike 4.0
 `CC-BY-SA-4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`__
 
-`Landscape Geoinformatics (UT) <https://landscape-geoinformatics.ut.ee/home-0>`__
+`Landscape Geoinformatics Lab (UT) <https://landscape-geoinformatics.ut.ee/>`__
 
 .. raw:: html
 
@@ -108,7 +108,7 @@ ETAG Mobilitas Pluss / MOBERC34
   :height: 100
 
 
-Landscape Geoinformatics Lab, University of Tartu
+`Landscape Geoinformatics Lab <https://landscape-geoinformatics.ut.ee/>`__, University of Tartu
 
 .. figure:: _static/lgeo_logo_eng_transparent.png
    :height: 80
