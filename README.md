@@ -11,9 +11,11 @@ There are wide range of global or regional level climate data available in a gri
 We will be using Python packages from the [Pangeo](https://pangeo.io/about.html) community, including [Jupyter](http://jupyter.org/) notebooks and the [Xarray](https://xarray.pydata.org/en/latest/) toolkit for working with labeled multi-dimensional arrays of data. In addition, we will demonstrate a few basic steps how to improve reproducibility and pro-actively apply FAIR principles when sharing and archiving data and code online for publishing via [GitHub](https://github.com/) and [Zenodo](https://zenodo.org/).
 
 
-## License
+## License and terms of usage
 
-Creative Commons Attribution-ShareAlike 4.0 [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+We hope that the materials provided here would be helpful for others. Thus, we share all the lesson materials openly, and also our source codes and lesson materials are openly available.
+
+These materials and code snippets are licensed under the Creative Commons Attribution-ShareAlike 4.0 License [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 - [Landscape Geoinformatics, UT](https://landscape-geoinformatics.ut.ee/home-0)
 
@@ -32,3 +34,17 @@ Spatio-temporal trend analysis of spatial climate data (temperature and rainfall
 ## Launch MyBinder online notebook demo
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LandscapeGeoinformatics/biogeomon_2022_pangeo/HEAD?labpath=notebook%2Fworkshop.ipynb)
+
+
+## Acknowledgments
+
+Tartu Ülikooli ASTRA projekt PER ASPERA,
+Maateaduste ja ökoloogia doktorikool 2016-2020,
+Projekti kood: 2014–2020.4.01.16–0027
+
+<img alt="EAS " style="border-width:0" src="docs/_source/_static/eas.png" height="100" />
+
+
+ETAG Mobilitas Pluss / MOBERC34
+
+<img alt="EAS " style="border-width:0" src="docs/_source/ _static/mobilitaspluss.jpg" height="100" />
