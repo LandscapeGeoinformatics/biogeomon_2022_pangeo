@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>FAIR and Reproducible Research &#8212; BIOGEOMON 2022 Workshop 1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Spatio-temporal trend analysis of temperature using Python" href="../L1_data/workshop.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/logo_ut.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L0_install/overview.html">
+  The Pangeo Python Ecosystem
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L0_install/Installing_Miniconda_GIS.html">
+  Installation and setup for Python with Miniconda
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L0_install/alt_install_miniconda.html">
+  Alternative installation method for Conda environments
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L0_install/test_installation.html">
+  Test that everything works
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../L1_data/workshop.html">
+  Spatio-temporal trend analysis of temperature using Python
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  FAIR and Reproducible Research
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/LGeoinformatics" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-basic-github">
+   Use basic Github
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zenodo">
+   ZENODO
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launch-mybinder-online-notebook-demo">
+   Launch MyBinder online notebook demo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reproducibility-guidelines">
+   Reproducibility guidelines
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="fair-and-reproducible-research">
+<h1>FAIR and Reproducible Research<a class="headerlink" href="#fair-and-reproducible-research" title="Permalink to this headline">#</a></h1>
+<img alt="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" src="https://www.openaire.eu/images/Guides/EC_FAIR_data.png" />
+<p><a class="reference external" href="https://www.openaire.eu/how-to-make-your-data-fair">https://www.openaire.eu/how-to-make-your-data-fair</a></p>
+<p>Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></p>
+<p><a class="reference external" href="https://www.nature.com/articles/sdata201618">https://www.nature.com/articles/sdata201618</a></p>
+<section id="use-basic-github">
+<h2>Use basic Github<a class="headerlink" href="#use-basic-github" title="Permalink to this headline">#</a></h2>
+<p>Version control is better than mailing files back and forth:</p>
+<ul class="simple">
+<li><p>Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of files are saved, it’s always possible to go back in time to see exactly who wrote what on a particular day, or what version of a program was used to generate a particular set of results.</p></li>
+<li><p>As we have this record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.</p></li>
+<li><p>When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.</p></li>
+</ul>
+<p>Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).</p>
+<p>Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jrebel.com/blog/git-cheat-sheet">https://www.jrebel.com/blog/git-cheat-sheet</a></p></li>
+<li><p><a class="reference external" href="https://www.jrebel.com/system/files/git-cheat-sheet.pdf">https://www.jrebel.com/system/files/git-cheat-sheet.pdf</a></p></li>
+</ul>
+<p>Since 1998, Software Carpentry has been teaching researchers the computing skills they need to get more done in less time and with less pain. Our volunteer instructors have run hundreds of events for more than 34,000 researchers since 2012. All of our lesson materials are freely reusable under the Creative Commons - Attribution license.</p>
+<p>The Software Carpentry Foundation and its sibling lesson project, Data Carpentry, have merged to become The Carpentries, a fiscally sponsored project of Community Initiatives, a 501(c)3 non-profit incorporated in the United States. See the staff page for The Carpentries.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/">https://swcarpentry.github.io/git-novice/</a></p></li>
+</ul>
+</section>
+<section id="zenodo">
+<h2>ZENODO<a class="headerlink" href="#zenodo" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>know how to deposit code and data in a indexed scientific repository with a DOI</p></li>
+</ul>
+</section>
+<section id="launch-mybinder-online-notebook-demo">
+<h2>Launch MyBinder online notebook demo<a class="headerlink" href="#launch-mybinder-online-notebook-demo" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/LandscapeGeoinformatics/biogeomon_2022_pangeo/HEAD?labpath=notebook%2Fworkshop.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+</section>
+<section id="reproducibility-guidelines">
+<h2>Reproducibility guidelines<a class="headerlink" href="#reproducibility-guidelines" title="Permalink to this headline">#</a></h2>
+<p>AGILE Reproducible Paper Guidelines - December 2020.pdf</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research">https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research</a></p>
+<p>Reproducible research is a crucial topic for any research domain using computational processes, including GIScience and EarthSciences. Recent research has shown, that many publications leave room for improvement regarding their computational reproducibility.  The AGILE council generously supports an initiative for development of new guidelines for AGILE conference submissions to improve reproducibility. The planned duration of the initiative is January 2019 to June 2019. The initiative will prepare new author guidelines and reviewer guidelines suitable for all submission types (full, short, poster).</p>
+<p><a class="reference external" href="https://reproducible-agile.github.io/">https://reproducible-agile.github.io/</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osf.io/numa5">https://osf.io/numa5</a></p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../L1_data/workshop.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Spatio-temporal trend analysis of temperature using Python</p>
+        </div>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, Alexander Kmoch.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

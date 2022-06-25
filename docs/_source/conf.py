@@ -60,3 +60,9 @@ html_logo = "_static/logo_ut.png"
 html_context = {
    "default_mode": "light"
 }
+
+html_theme_options = {
+   "show_nav_level": 0,
+   "github_url": "https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo",
+   "twitter_url": "https://twitter.com/LGeoinformatics",
+}
