@@ -46,6 +46,7 @@ aggregated into **monthly mean temperature (°C)**. The figure below
 illustrates how we will calculate MK and SS at pixel scale on monthly
 basis.
 
+.. image:: workshop_files/trend_calc.png
 
 
 Mann-Kendall test for trend analysis
@@ -128,9 +129,8 @@ purposes. Trend analysis will be carried out using the
     import matplotlib.patches as mpatches
     import calendar
 
-Our temperature NetCDF is located in an
-`ownCloud <https://owncloud.com/>`__ folder and the file’s metadata is
-given in ``sc58_catalog.yaml`` located in the workshop’s GitHub
+Our prepared (smaller)  NetCDF data files are located in the online `workshop GitHub repository <https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/>`__ and the file’s metadata is
+given in another online metadata file, ``workshop_catalog.yaml``, also located in the workshop’s GitHub
 repository.
 
 .. code:: ipython3
@@ -2133,8 +2133,6 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 2
 
 
@@ -2147,8 +2145,6 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 3
 
 
@@ -2160,8 +2156,6 @@ loop through it.
 
 
 .. parsed-literal::
-
-
 
     Siginificant trends in month number 4
 
@@ -2176,8 +2170,6 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 5
 
 
@@ -2189,8 +2181,6 @@ loop through it.
 
 
 .. parsed-literal::
-
-
 
     Siginificant trends in month number 6
 
@@ -2204,8 +2194,6 @@ loop through it.
 
 
 .. parsed-literal::
-
-
 
     Siginificant trends in month number 7
 
@@ -2234,10 +2222,7 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 9
-
 
 
 .. parsed-literal::
@@ -2248,8 +2233,6 @@ loop through it.
 
 
 .. parsed-literal::
-
-
 
     Siginificant trends in month number 10
 
@@ -2264,8 +2247,6 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 11
 
 
@@ -2279,8 +2260,6 @@ loop through it.
 
 .. parsed-literal::
 
-
-
     Siginificant trends in month number 12
 
 
@@ -2290,11 +2269,6 @@ loop through it.
     no trend      2543
     increasing       4
     Name: trend, dtype: int64
-
-
-.. parsed-literal::
-
-
 
 
 

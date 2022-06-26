@@ -60,6 +60,7 @@ Intake is a lightweight package for finding, investigating, loading and dissemin
 Next steps
 ~~~~~~~~~~
 
+
 After this lesson you should:
 
 - setup a Python environment and install required packages with the conda tool

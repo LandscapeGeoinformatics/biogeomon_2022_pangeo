@@ -61,17 +61,17 @@ After it opens it should display somehow like so:
 
 .. code::
 
-    (base) C:\Users\Alexander>
+    (base) C:\Users\Your_Account>
 
     or
 
-    (C:\dev\conda3) C:\Users\Alexander>
+    (C:\dev\conda3) C:\Users\Your_Account>
 
 On the command line type command ``conda --version`` in order to see if the command is successful, it should show the version of the conda tool.
 
 .. code::
 
-    (base) C:\Users\Alexander> conda --version
+    (base) C:\Users\Your_Account> conda --version
     conda 4.9.2
 
 
@@ -81,7 +81,7 @@ Creating environments and install packages
 It is important to understand, that you are always "residing" somewhere in some folder. This will in particular important to make sure that you find your scripts, notebooks and the working data, which ideally reside under the same directory hierarchy.
 
 In order to be well organised throughout the course, please create a working folder/directory, where you will put your scripts and data files for the lab sessions and homeworks.
-On Windows you have your local user folder, typically ``C:\Users\Alexander``. Open with the Windows File Explorer and create a new folder in this folder, with the name ``biogeomon2022``.
+On Windows you have your local user folder, typically ``C:\Users\Your_Account``. Open with the Windows File Explorer and create a new folder in this folder, with the name ``biogeomon2022``.
 
 .. admonition:: BEWARE:
 
@@ -92,14 +92,14 @@ Open the Anaconda/conda command prompt from the Start menu, and type the command
 .. code::
 
     c:
-    cd C:\Users\Alexander\biogeomon2022
+    cd C:\Users\Your_Account\biogeomon2022
 
 You can see which files are inside this folder by using the ``dir`` command. (On Mac and Linux it is ``ls``) and it will print information and files of your current folder.
 
 .. code::
 
     c:
-    cd C:\Users\Alexander\biogeomon2022
+    cd C:\Users\Your_Account\biogeomon2022
 
     dir
 
@@ -108,7 +108,7 @@ You can see which files are inside this folder by using the ``dir`` command. (On
     Volume in drive C is Windows
     Volume Serial Number is 5E4C-FED5
 
-    Directory of C:\Users\Alexander\biogeomon2022
+    Directory of C:\Users\Your_Account\biogeomon2022
 
     29.09.2021  15:00    <DIR>          .
     29.09.2021  15:00    <DIR>          ..
@@ -129,7 +129,10 @@ This way, you should be able to install the same environment in different comput
 
 Make sure you are using the correct folder on the University computers. In the Windows File Explorer, go via ``this PC``, ``c:\Users`` to ``your account name`` folder.
 
-Now, please download the prepared `environment.yml <../_static/data/environment.yml>`_ file and save it to your newly created working folder.
+.. admonition:: NB:
+
+   Now, please download the prepared `environment.yml <https://raw.githubusercontent.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/main/environment.yml>`_ file and save it to your newly created working folder.
+
 
 To check, in the commandline window (Anaconda prompt) navigate to your working folder again and list the contents of the folder with ``dir``:
 
@@ -137,7 +140,7 @@ To check, in the commandline window (Anaconda prompt) navigate to your working f
 
     (C:\dev\conda3) c:
 
-    (C:\dev\conda3) cd C:\Users\Alexander\biogeomon2022
+    (C:\dev\conda3) cd C:\Users\Your_Account\biogeomon2022
 
     (C:\dev\conda3) dir
 
@@ -146,7 +149,7 @@ To check, in the commandline window (Anaconda prompt) navigate to your working f
     Volume in drive C is Windows
     Volume Serial Number is 5E4C-FED5
 
-    Directory of C:\Users\Alexander\biogeomon2022
+    Directory of C:\Users\Your_Account\biogeomon2022
 
     29.10.2021  15:00    <DIR>          .
     29.10.2021  15:00    <DIR>          ..

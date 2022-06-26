@@ -250,15 +250,15 @@ After successful installation you should have a menu entry in the Windows Start 
 <p><code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Prompt</span></code></p>
 <p>This is a Windows CMD (Commandline window, that “knows” about, where your Miniconda/Anaconda installation lies, and where to find the <code class="docutils literal notranslate"><span class="pre">conda</span></code> tool (without interfering other Python installations on your computer).
 After it opens it should display somehow like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span><span class="o">&gt;</span>
 
 <span class="ow">or</span>
 
-<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span>
+<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>On the command line type command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">--version</span></code> in order to see if the command is successful, it should show the version of the conda tool.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span><span class="o">&gt;</span> <span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span><span class="o">&gt;</span> <span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
 <span class="n">conda</span> <span class="mf">4.9.2</span>
 </pre></div>
 </div>
@@ -267,19 +267,19 @@ After it opens it should display somehow like so:</p>
 <h1>Creating environments and install packages<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>It is important to understand, that you are always “residing” somewhere in some folder. This will in particular important to make sure that you find your scripts, notebooks and the working data, which ideally reside under the same directory hierarchy.</p>
 <p>In order to be well organised throughout the course, please create a working folder/directory, where you will put your scripts and data files for the lab sessions and homeworks.
-On Windows you have your local user folder, typically <code class="docutils literal notranslate"><span class="pre">C:\Users\Alexander</span></code>. Open with the Windows File Explorer and create a new folder in this folder, with the name <code class="docutils literal notranslate"><span class="pre">biogeomon2022</span></code>.</p>
+On Windows you have your local user folder, typically <code class="docutils literal notranslate"><span class="pre">C:\Users\Your_Account</span></code>. Open with the Windows File Explorer and create a new folder in this folder, with the name <code class="docutils literal notranslate"><span class="pre">biogeomon2022</span></code>.</p>
 <div class="admonition-beware admonition">
 <p class="admonition-title">BEWARE:</p>
 <p>Make sure you navigate explicitly into your correct working folder “biogeomon2022”. As we will always start or environment from the command line, here are two very simple practical steps to navigate on the commandline.</p>
 </div>
 <p>Open the Anaconda/conda command prompt from the Start menu, and type the commands shown below.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">:</span>
-<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span>\<span class="n">biogeomon2022</span>
 </pre></div>
 </div>
 <p>You can see which files are inside this folder by using the <code class="docutils literal notranslate"><span class="pre">dir</span></code> command. (On Mac and Linux it is <code class="docutils literal notranslate"><span class="pre">ls</span></code>) and it will print information and files of your current folder.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="p">:</span>
-<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+<span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span>\<span class="n">biogeomon2022</span>
 
 <span class="nb">dir</span>
 
@@ -288,7 +288,7 @@ On Windows you have your local user folder, typically <code class="docutils lite
 <span class="n">Volume</span> <span class="ow">in</span> <span class="n">drive</span> <span class="n">C</span> <span class="ow">is</span> <span class="n">Windows</span>
 <span class="n">Volume</span> <span class="n">Serial</span> <span class="n">Number</span> <span class="ow">is</span> <span class="mf">5E4</span><span class="n">C</span><span class="o">-</span><span class="n">FED5</span>
 
-<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span>\<span class="n">biogeomon2022</span>
 
 <span class="mf">29.09.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">.</span>
 <span class="mf">29.09.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">..</span>
@@ -303,11 +303,14 @@ They help you to keep various Python versions around without messing up your sys
 <p>The more professional/reproducible way is to use a so called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file. In the file the environment name, the package channels, Python version and all desired packages are declared.
 This way, you should be able to install the same environment in different computers, therfore improving the reliability of having the same packages etc installed. You can even go so far as to specify the exact package version.</p>
 <p>Make sure you are using the correct folder on the University computers. In the Windows File Explorer, go via <code class="docutils literal notranslate"><span class="pre">this</span> <span class="pre">PC</span></code>, <code class="docutils literal notranslate"><span class="pre">c:\Users</span></code> to <code class="docutils literal notranslate"><span class="pre">your</span> <span class="pre">account</span> <span class="pre">name</span></code> folder.</p>
-<p>Now, please download the prepared <a class="reference external" href="../_static/data/environment.yml">environment.yml</a> file and save it to your newly created working folder.</p>
+<div class="admonition-nb admonition">
+<p class="admonition-title">NB:</p>
+<p>Now, please download the prepared <a class="reference external" href="https://raw.githubusercontent.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/main/environment.yml">environment.yml</a> file and save it to your newly created working folder.</p>
+</div>
 <p>To check, in the commandline window (Anaconda prompt) navigate to your working folder again and list the contents of the folder with <code class="docutils literal notranslate"><span class="pre">dir</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">c</span><span class="p">:</span>
 
-<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+<span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span>\<span class="n">biogeomon2022</span>
 
 <span class="p">(</span><span class="n">C</span><span class="p">:</span>\<span class="n">dev</span>\<span class="n">conda3</span><span class="p">)</span> <span class="nb">dir</span>
 
@@ -316,7 +319,7 @@ This way, you should be able to install the same environment in different comput
 <span class="n">Volume</span> <span class="ow">in</span> <span class="n">drive</span> <span class="n">C</span> <span class="ow">is</span> <span class="n">Windows</span>
 <span class="n">Volume</span> <span class="n">Serial</span> <span class="n">Number</span> <span class="ow">is</span> <span class="mf">5E4</span><span class="n">C</span><span class="o">-</span><span class="n">FED5</span>
 
-<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Alexander</span>\<span class="n">biogeomon2022</span>
+<span class="n">Directory</span> <span class="n">of</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Your_Account</span>\<span class="n">biogeomon2022</span>
 
 <span class="mf">29.10.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">.</span>
 <span class="mf">29.10.2021</span>  <span class="mi">15</span><span class="p">:</span><span class="mi">00</span>    <span class="o">&lt;</span><span class="n">DIR</span><span class="o">&gt;</span>          <span class="o">..</span>

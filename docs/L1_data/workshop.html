@@ -296,6 +296,7 @@ of about 11 km at the equator) from <strong>January 2001 until December 2020</st
 aggregated into <strong>monthly mean temperature (°C)</strong>. The figure below
 illustrates how we will calculate MK and SS at pixel scale on monthly
 basis.</p>
+<img alt="../_images/trend_calc.png" src="../_images/trend_calc.png" />
 </section>
 <section id="mann-kendall-test-for-trend-analysis">
 <h2>Mann-Kendall test for trend analysis<a class="headerlink" href="#mann-kendall-test-for-trend-analysis" title="Permalink to this headline">#</a></h2>
@@ -371,9 +372,8 @@ purposes. Trend analysis will be carried out using the
 <span class="kn">import</span> <span class="nn">calendar</span>
 </pre></div>
 </div>
-<p>Our temperature NetCDF is located in an
-<a class="reference external" href="https://owncloud.com/">ownCloud</a> folder and the file’s metadata is
-given in <code class="docutils literal notranslate"><span class="pre">sc58_catalog.yaml</span></code> located in the workshop’s GitHub
+<p>Our prepared (smaller)  NetCDF data files are located in the online <a class="reference external" href="https://github.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/">workshop GitHub repository</a> and the file’s metadata is
+given in another online metadata file, <code class="docutils literal notranslate"><span class="pre">workshop_catalog.yaml</span></code>, also located in the workshop’s GitHub
 repository.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/LandscapeGeoinformatics/biogeomon_2022_pangeo/main/resources/workshop_catalog.yaml&#39;</span><span class="p">)</span>
 </pre></div>
