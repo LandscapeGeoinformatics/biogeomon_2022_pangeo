@@ -26,6 +26,8 @@ These materials and code snippets are licensed under the Creative Commons Attrib
     Bruno Montibeller <a href="https://orcid.org/0000-0002-5250-8450"><img src="orcid_icon.png" width="12px" height="12px" /></a>
 
     Evelyn Uuemaa <a href="https://orcid.org/0000-0002-0782-6740"><img src="orcid_icon.png" width="12px" height="12px" /></a>
+    
+    Desalew Meseret Moges <a href="https://orcid.org/0000-0002-7864-5904"><img src="orcid_icon.png" width="12px" height="12px" /></a>
 
 
 Spatio-temporal trend analysis of spatial climate data (temperature and rainfall) using Python (2021) Alexander Kmoch, Bruno Montibeller, Holger Virro, Evelyn Uuemaa, [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5876348.svg)](https://doi.org/10.5281/zenodo.5876348)
@@ -46,5 +48,8 @@ Projekti kood: 2014–2020.4.01.16–0027
 
 
 ETAG Mobilitas Pluss / MOBERC34
+ETAG Mobilitas Pluss / MOBJD610
 
 <img alt="MOBERC34 " style="border-width:0" src="docs/_source/_static/mobilitaspluss.jpg" height="100" />
+
+
